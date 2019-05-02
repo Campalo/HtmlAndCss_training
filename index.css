@@ -1,0 +1,63 @@
+#fellows div {
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 350px;
+    background-size: cover;
+    opacity: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* align horizontally from the top */
+    align-items: center; /* align vertically on the center */
+    margin: 20px;
+}
+
+#fellows div:nth-of-type(1) { /* select the 1st div in #fellows section */ 
+    background-image: url("http://images.innoveduc.fr/integration_gandalf.png");
+}
+
+#fellows div:nth-of-type(2) {
+    background-image: url("https://lehobbitblog.files.wordpress.com/2016/01/bilbon-sacquet.png");
+}
+
+#fellows div:nth-of-type(3) {
+    background-image: url("https://i.pinimg.com/originals/d8/b8/b9/d8b8b97d95fbaa79afcc2cb64540188c.jpg");
+}
+
+#fellows h4 {
+    font-size: 3rem;
+    color: whitesmoke;
+    margin: 20px;
+}
+
+#fellows h5 { 
+    background-color: whitesmoke;
+    color: black;
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+#fellows h5 span  {
+    color: orangered;
+}
+
+#fellows div:hover {
+    opacity: 1.0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* align horizontally from the bottom */
+    align-items: center; /* align vertically on the center */
+}
+
+#fellows div:hover h4 {
+    font-size: 1.2rem;
+}
+
+#fellows div:hover h5 { /* h5 is no more visible */
+    opacity: 0;
+}
